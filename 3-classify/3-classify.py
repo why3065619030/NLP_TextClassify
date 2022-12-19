@@ -1,9 +1,11 @@
 # import required packages
+#https://huggingface.co/finiteautomata/bertweet-base-sentiment-analysis  模型源地址
+#三分类
 import torch
 import pandas as pd
 import numpy as np
 from transformers import AutoTokenizer, AutoModelForSequenceClassification, Trainer
-#7分类
+
 
 # Create class for data preparation
 class SimpleDataset:
@@ -17,8 +19,8 @@ class SimpleDataset:
         return {k: v[idx] for k, v in self.tokenized_texts.items()}
 
 # load tokenizer and model, create trainer
-model_name = "j-hartmann/emotion-english-distilroberta-base"
-tokenizer = AutoTokenizer.from_pretrained(model_name)
+model_name = "pysentimiento/robertuito-sentiment-analysis"
+tokenizer = AutoTokenizer.from_pretrained(model_name, model_max_length=128)
 model = AutoModelForSequenceClassification.from_pretrained(model_name)
 trainer = Trainer(model=model)
 
@@ -26,7 +28,7 @@ trainer = Trainer(model=model)
 pred_texts = ['I like that', 'That is annoying', 'This is great!', 'Wouldn´t recommend it.']
 
 # specify your filename
-file_name = "../bertData/the_belt_and_road.csv"  # note: you can right-click on your file and copy-paste the path to it here
+file_name = "../bertData/emotion_examples.csv"  # note: you can right-click on your file and copy-paste the path to it here
 text_column = "text"  # select the column in your csv that contains the text to be classified
 
 # read in csv
@@ -59,30 +61,23 @@ temp = (np.exp(predictions[0])/np.exp(predictions[0]).sum(-1,keepdims=True))
 
 # work in progress
 # container
-anger = []
-disgust = []
-fear = []
-joy = []
+positive = []
+negative = []
 neutral = []
-sadness = []
-surprise = []
 
 # extract scores (as many entries as exist in pred_texts)
 for i in range(len(pred_texts)):
-  anger.append(temp[i][0])
-  disgust.append(temp[i][1])
-  fear.append(temp[i][2])
-  joy.append(temp[i][3])
-  neutral.append(temp[i][4])
-  sadness.append(temp[i][5])
-  surprise.append(temp[i][6])
+  positive.append(temp[i][2])
+  neutral.append(temp[i][1])
+  negative.append(temp[i][0])
+
 
 # Create DataFrame with texts, predictions, labels, and scores
-df = pd.DataFrame(list(zip(pred_texts,preds,labels,scores,  anger, disgust, fear, joy, neutral, sadness, surprise)), columns=['text','pred','label','score', 'anger', 'disgust', 'fear', 'joy', 'neutral', 'sadness', 'surprise'])
+df = pd.DataFrame(list(zip(pred_texts,preds,labels,scores,  negative, neutral, positive)), columns=['text','pred','label','score', 'negative', 'neutral', 'positive'])
 df.head()
 
 # save results to csv
-YOUR_FILENAME = "YOUR_FILENAME_EMOTIONS.csv"  # name your output file
+YOUR_FILENAME = "./why.csv"  # name your output file
 # df.to_csv(YOUR_FILENAME)
 df.to_csv(YOUR_FILENAME)
 

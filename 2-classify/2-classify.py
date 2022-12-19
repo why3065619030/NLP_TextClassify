@@ -1,4 +1,5 @@
 # import required packages
+#二分类，积极 or 消极
 import torch
 import pandas as pd
 import numpy as np
