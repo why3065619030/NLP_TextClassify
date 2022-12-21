@@ -28,7 +28,7 @@ trainer = Trainer(model=model)
 pred_texts = ['I like that', 'That is annoying', 'This is great!', 'Wouldn´t recommend it.']
 
 # specify your filename
-file_name = "../bertData/emotion_examples.csv"  # note: you can right-click on your file and copy-paste the path to it here
+file_name = "../bertData/the_belt_and_road.csv"  # note: you can right-click on your file and copy-paste the path to it here
 text_column = "text"  # select the column in your csv that contains the text to be classified
 
 # read in csv
