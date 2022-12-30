@@ -26,13 +26,13 @@ trainer = Trainer(model=model)
 pred_texts = ['I like that', 'That is annoying', 'This is great!', 'Wouldn´t recommend it.']
 
 # specify your filename
-file_name = "../bertData/the_belt_and_road.csv"  # note: you can right-click on your file and copy-paste the path to it here
+file_name = "../bertData/Beijing Winter Olympics.csv"  # note: you can right-click on your file and copy-paste the path to it here
 text_column = "text"  # select the column in your csv that contains the text to be classified
 
 # read in csv
 df_pred = pd.read_csv(file_name)
 pred_texts = df_pred[text_column].dropna().astype('str').tolist()
-
+times = df_pred['time'].dropna().astype('str').tolist()
 # # specify your filename
 # file_name = "./bertData/emotion_examples.csv"  # note: you can right-click on your file and copy-paste the path to it here
 # text_column = "text"  # select the column in your csv that contains the text to be classified
@@ -61,15 +61,16 @@ temp = (np.exp(predictions[0])/np.exp(predictions[0]).sum(-1,keepdims=True))
 # container
 positive = []
 negative = []
+time = []
 
 # extract scores (as many entries as exist in pred_texts)
 for i in range(len(pred_texts)):
   negative.append(temp[i][0])
   positive.append(temp[i][1])
-
+  time.append(times[i])
 
 # Create DataFrame with texts, predictions, labels, and scores
-df = pd.DataFrame(list(zip(pred_texts,preds,labels,negative,positive)), columns=['text','pred','label', 'negative', 'positive'])
+df = pd.DataFrame(list(zip(pred_texts,preds,labels,negative,positive,time)), columns=['text','pred','label', 'negative', 'positive','time'])
 df.head()
 
 # save results to csv

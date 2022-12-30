@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/2-classify/tmp_trainer/Beijing Winter Olympics.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/2-classify/tmp_trainer/Chinese Medicine.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/2-classify/tmp_trainer/belt and road.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/3-classify/tmp_trainer/Beijing Winter Olympics.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/3-classify/tmp_trainer/Chinese Medicine.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/3-classify/tmp_trainer/belt and road.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/3-classify/tmp_trainer/liziqi.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Sevenclass/tmp_trainer/Beijing Winter Olympics.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Sevenclass/tmp_trainer/Chinese Medicine.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Sevenclass/tmp_trainer/belt and road.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Sevenclass/tmp_trainer/liziqi.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/词云图/liziqi.txt" charset="GBK" />
+  </component>
+</project>

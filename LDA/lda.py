@@ -9,15 +9,15 @@ doc7 = "With the kind of leaders pakistan has, and it's never ending dependency 
 # 整合文档数据
 
 import json
-with open('../bertData/the_belt_and_road.json',encoding='utf-8-sig', errors='ignore') as json_file:
+with open('../bertData/Chinese Medicine.json',encoding='utf-8-sig', errors='ignore') as json_file:
     data = json.load(json_file)
 
 doc_complete = []
 for i in range(len(data)):
-    doc_complete.append(data[i].get('text'))
+    for j in range(len(data[i]["comment"])):
+        doc_complete.append(data[i]["comment"][j]["text"])
 
 from nltk.corpus import stopwords
-
 from nltk.stem.wordnet import WordNetLemmatizer
 import string
 #移除标点符号，停用词和标准化语料库（Lemmatizer，对于英文，将词归元）。
@@ -60,23 +60,25 @@ doc_term_matrix = [dictionary.doc2bow(doc) for doc in doc_clean]
 Lda = gensim.models.ldamodel.LdaModel
 
 # 在 DT 矩阵上运行和训练 LDA 模型
-ldamodel = Lda(doc_term_matrix, num_topics=4, id2word = dictionary, passes=50)
+ldamodel = Lda(doc_term_matrix, num_topics=6, id2word = dictionary, passes=50)
 
 #输出结果
 print("数据总长度：",len(doc_complete))
-list = ldamodel.print_topics(num_topics=4, num_words=4)
+list = ldamodel.print_topics(num_topics=6, num_words=6)
 print(list)
 nums = []   #存放关键词
-for i in range(4):
+for i in range(6):
     st = list[i][1]
     ans = st.split("\"")
     nums.append(ans[1])
     nums.append(ans[3])
     nums.append(ans[5])
     nums.append(ans[7])
+    nums.append(ans[9])
+    nums.append(ans[11])
 print(set(nums))
 #写入文件方便解析
-f = open("../词云图/why.txt", "w")
+f = open("../词云图/Chinese Medicine.txt", "w")
 
 for line in nums:
     f.write(line+'\n')

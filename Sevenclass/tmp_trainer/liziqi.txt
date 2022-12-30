@@ -1,0 +1,352 @@
+整体
+anger disgust fear joy neutral sadness surprise Sum 
+18 17 62 235 366 48 73 819
+生气：2.20%
+厌恶：2.08%
+恐惧：7.57%
+喜悦：28.69%
+中立：44.69%
+悲伤：5.86%
+惊喜：8.91%
+
+按日期升序
+anger disgust fear joy neutral sadness surprise Sum
+0 0 0 0 9 0 0 9
+生气：0.00%
+厌恶：0.00%
+恐惧：0.00%
+喜悦：0.00%
+中立：100.00%
+悲伤：0.00%
+惊喜：0.00%
+
+anger disgust fear joy neutral sadness surprise Sum
+0 0 0 0 4 0 0 4
+生气：0.00%
+厌恶：0.00%
+恐惧：0.00%
+喜悦：0.00%
+中立：100.00%
+悲伤：0.00%
+惊喜：0.00%
+
+anger disgust fear joy neutral sadness surprise Sum
+0 0 0 4 3 0 3 10
+生气：0.00%
+厌恶：0.00%
+恐惧：0.00%
+喜悦：40.00%
+中立：30.00%
+悲伤：0.00%
+惊喜：30.00%
+
+anger disgust fear joy neutral sadness surprise Sum
+1 1 0 17 20 1 13 53
+生气：1.89%
+厌恶：1.89%
+恐惧：0.00%
+喜悦：32.08%
+中立：37.74%
+悲伤：1.89%
+惊喜：24.53%
+
+anger disgust fear joy neutral sadness surprise Sum
+4 4 0 32 56 0 17 113
+生气：3.54%
+厌恶：3.54%
+恐惧：0.00%
+喜悦：28.32%
+中立：49.56%
+悲伤：0.00%
+惊喜：15.04%
+
+anger disgust fear joy neutral sadness surprise Sum
+2 5 8 60 77 6 23 181
+生气：1.10%
+厌恶：2.76%
+恐惧：4.42%
+喜悦：33.15%
+中立：42.54%
+悲伤：3.31%
+惊喜：12.71%
+
+anger disgust fear joy neutral sadness surprise Sum
+0 0 1 13 6 1 0 21
+生气：0.00%
+厌恶：0.00%
+恐惧：4.76%
+喜悦：61.90%
+中立：28.57%
+悲伤：4.76%
+惊喜：0.00%
+
+anger disgust fear joy neutral sadness surprise Sum
+0 0 1 4 9 0 0 14
+生气：0.00%
+厌恶：0.00%
+恐惧：7.14%
+喜悦：28.57%
+中立：64.29%
+悲伤：0.00%
+惊喜：0.00%
+
+anger disgust fear joy neutral sadness surprise Sum
+0 0 2 3 13 0 2 20
+生气：0.00%
+厌恶：0.00%
+恐惧：10.00%
+喜悦：15.00%
+中立：65.00%
+悲伤：0.00%
+惊喜：10.00%
+
+anger disgust fear joy neutral sadness surprise Sum
+0 0 7 5 4 4 1 21
+生气：0.00%
+厌恶：0.00%
+恐惧：33.33%
+喜悦：23.81%
+中立：19.05%
+悲伤：19.05%
+惊喜：4.76%
+
+anger disgust fear joy neutral sadness surprise Sum
+2 0 1 4 12 1 0 20
+生气：10.00%
+厌恶：0.00%
+恐惧：5.00%
+喜悦：20.00%
+中立：60.00%
+悲伤：5.00%
+惊喜：0.00%
+
+anger disgust fear joy neutral sadness surprise Sum
+1 0 0 5 5 2 0 13
+生气：7.69%
+厌恶：0.00%
+恐惧：0.00%
+喜悦：38.46%
+中立：38.46%
+悲伤：15.38%
+惊喜：0.00%
+
+anger disgust fear joy neutral sadness surprise Sum
+1 0 4 6 5 3 0 19
+生气：5.26%
+厌恶：0.00%
+恐惧：21.05%
+喜悦：31.58%
+中立：26.32%
+悲伤：15.79%
+惊喜：0.00%
+
+anger disgust fear joy neutral sadness surprise Sum
+0 0 0 9 3 2 0 14
+生气：0.00%
+厌恶：0.00%
+恐惧：0.00%
+喜悦：64.29%
+中立：21.43%
+悲伤：14.29%
+惊喜：0.00%
+
+anger disgust fear joy neutral sadness surprise Sum
+1 0 5 9 12 4 0 31
+生气：3.23%
+厌恶：0.00%
+恐惧：16.13%
+喜悦：29.03%
+中立：38.71%
+悲伤：12.90%
+惊喜：0.00%
+
+anger disgust fear joy neutral sadness surprise Sum
+0 1 2 4 10 2 1 20
+生气：0.00%
+厌恶：5.00%
+恐惧：10.00%
+喜悦：20.00%
+中立：50.00%
+悲伤：10.00%
+惊喜：5.00%
+
+anger disgust fear joy neutral sadness surprise Sum
+0 0 1 4 1 0 1 7
+生气：0.00%
+厌恶：0.00%
+恐惧：14.29%
+喜悦：57.14%
+中立：14.29%
+悲伤：0.00%
+惊喜：14.29%
+
+anger disgust fear joy neutral sadness surprise Sum
+0 0 1 0 0 0 0 1
+生气：0.00%
+厌恶：0.00%
+恐惧：100.00%
+喜悦：0.00%
+中立：0.00%
+悲伤：0.00%
+惊喜：0.00%
+
+anger disgust fear joy neutral sadness surprise Sum
+1 1 3 17 18 8 0 48
+生气：2.08%
+厌恶：2.08%
+恐惧：6.25%
+喜悦：35.42%
+中立：37.50%
+悲伤：16.67%
+惊喜：0.00%
+
+anger disgust fear joy neutral sadness surprise Sum
+1 1 5 9 20 4 4 44
+生气：2.27%
+厌恶：2.27%
+恐惧：11.36%
+喜悦：20.45%
+中立：45.45%
+悲伤：9.09%
+惊喜：9.09%
+
+anger disgust fear joy neutral sadness surprise Sum
+0 0 3 1 1 1 0 6
+生气：0.00%
+厌恶：0.00%
+恐惧：50.00%
+喜悦：16.67%
+中立：16.67%
+悲伤：16.67%
+惊喜：0.00%
+
+anger disgust fear joy neutral sadness surprise Sum
+0 0 0 1 3 0 0 4
+生气：0.00%
+厌恶：0.00%
+恐惧：0.00%
+喜悦：25.00%
+中立：75.00%
+悲伤：0.00%
+惊喜：0.00%
+
+anger disgust fear joy neutral sadness surprise Sum
+1 0 2 1 5 3 0 12
+生气：8.33%
+厌恶：0.00%
+恐惧：16.67%
+喜悦：8.33%
+中立：41.67%
+悲伤：25.00%
+惊喜：0.00%
+
+anger disgust fear joy neutral sadness surprise Sum
+0 0 1 4 2 0 0 7
+生气：0.00%
+厌恶：0.00%
+恐惧：14.29%
+喜悦：57.14%
+中立：28.57%
+悲伤：0.00%
+惊喜：0.00%
+
+anger disgust fear joy neutral sadness surprise Sum
+0 0 0 0 2 0 4 6
+生气：0.00%
+厌恶：0.00%
+恐惧：0.00%
+喜悦：0.00%
+中立：33.33%
+悲伤：0.00%
+惊喜：66.67%
+
+anger disgust fear joy neutral sadness surprise Sum
+0 0 0 2 4 1 0 7
+生气：0.00%
+厌恶：0.00%
+恐惧：0.00%
+喜悦：28.57%
+中立：57.14%
+悲伤：14.29%
+惊喜：0.00%
+
+anger disgust fear joy neutral sadness surprise Sum
+0 1 1 5 3 1 2 13
+生气：0.00%
+厌恶：7.69%
+恐惧：7.69%
+喜悦：38.46%
+中立：23.08%
+悲伤：7.69%
+惊喜：15.38%
+
+anger disgust fear joy neutral sadness surprise Sum
+1 1 0 4 6 1 0 13
+生气：7.69%
+厌恶：7.69%
+恐惧：0.00%
+喜悦：30.77%
+中立：46.15%
+悲伤：7.69%
+惊喜：0.00%
+
+anger disgust fear joy neutral sadness surprise Sum
+0 0 1 5 8 0 1 15
+生气：0.00%
+厌恶：0.00%
+恐惧：6.67%
+喜悦：33.33%
+中立：53.33%
+悲伤：0.00%
+惊喜：6.67%
+
+anger disgust fear joy neutral sadness surprise Sum
+0 0 2 0 1 0 0 3
+生气：0.00%
+厌恶：0.00%
+恐惧：66.67%
+喜悦：0.00%
+中立：33.33%
+悲伤：0.00%
+惊喜：0.00%
+
+anger disgust fear joy neutral sadness surprise Sum
+1 1 3 1 2 0 0 8
+生气：12.50%
+厌恶：12.50%
+恐惧：37.50%
+喜悦：12.50%
+中立：25.00%
+悲伤：0.00%
+惊喜：0.00%
+
+anger disgust fear joy neutral sadness surprise Sum
+0 0 0 2 0 0 0 2
+生气：0.00%
+厌恶：0.00%
+恐惧：0.00%
+喜悦：100.00%
+中立：0.00%
+悲伤：0.00%
+惊喜：0.00%
+
+anger disgust fear joy neutral sadness surprise Sum
+0 0 1 0 1 0 0 2
+生气：0.00%
+厌恶：0.00%
+恐惧：50.00%
+喜悦：0.00%
+中立：50.00%
+悲伤：0.00%
+惊喜：0.00%
+
+anger disgust fear joy neutral sadness surprise Sum
+1 1 7 4 41 3 1 58
+生气：1.72%
+厌恶：1.72%
+恐惧：12.07%
+喜悦：6.90%
+中立：70.69%
+悲伤：5.17%
+惊喜：1.72%
+

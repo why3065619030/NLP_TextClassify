@@ -2,7 +2,7 @@ import jieba
 import matplotlib.pyplot as plt
 from wordcloud import WordCloud
 
-text = open("./why.txt", encoding="utf-8").read()  # 标明文本路径，打开
+text = open("./Chinese Medicine.txt").read()  # 标明文本路径，打开
 
 # 生成对象
 wc = WordCloud(font_path="./msyh.ttc", width=500, height=400, mode="RGBA",
@@ -13,4 +13,4 @@ plt.axis("off")
 plt.show()
 
 # 保存文件
-wc.to_file("./ciyun1.png")
+wc.to_file("./Chinese Medicine.png")

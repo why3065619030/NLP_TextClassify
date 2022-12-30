@@ -31,6 +31,9 @@ import pandas as pd
 #
 # data = pd.read_json('the_belt_and_road.json')
 import json
-with open('./the_belt_and_road.json',encoding='utf-8-sig', errors='ignore') as json_file:
+with open('./Beijing Winter Olympics.json',encoding='utf-8-sig', errors='ignore') as json_file:
     data = json.load(json_file)
-print(data)     #data[0]["comment"][0]["text"]
+print(data[0]["comment"][1]["text"])     #data[0]["comment"][0]["text"]
+print(len(data[2]["comment"]))
+print(len(data))
+
