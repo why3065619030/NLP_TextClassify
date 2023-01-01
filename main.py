@@ -3,7 +3,11 @@ from Sevenclass import SevClassify
 from reptilian import Spider
 from Sevenclass import csvOrJson
 from bertData import jToC
-
+from ThreeClassify import TClassify
+from ThreeClassify import saveToDatabase
+from LDA import lda
+from Twoclassify import twoclassify
+from Twoclassify import toDataset
 def select_db(select_sql):
     """查询"""
     # 建立数据库连接
@@ -92,10 +96,19 @@ if __name__ == '__main__':
     # 将json转化为csv，并按日期升序
     jToC.changeData(keyword)
     # 读取csv文件，并进行情感分类
-    SevClassify.SevenClassify(keyword)  # 结果保存在./bertData/YOUR_FILENAME_EMOTIONS.csv
-    # 将结果的csv文件分析并插入数据库
-    csvOrJson.do(emotionAnaId=1)
 
+    TClassify.ThreeClass(keyword)   #3
+    saveToDatabase.do(emotionAnaId=1)
+    print("三分类已存")
+
+    twoclassify.TwoClassify(keyword) #2
+    toDataset.do(emotionAnaId=1)
+    print("二分类已存")
+    SevClassify.SevenClassify(keyword)  # 7结果保存在./bertData/YOUR_FILENAME_EMOTIONS.csv
+    # 将7分类结果的csv文件分析并插入数据库
+    csvOrJson.do(emotionAnaId=2)
+    print("七分类已存")
+    # lda.get_LDA(keyword)        #./Data/keyword.json处拿数据分析
 
 
 # d = "2022-03-01"
