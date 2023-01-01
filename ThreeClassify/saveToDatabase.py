@@ -86,10 +86,10 @@ def do(emotionAnaId):
                 neutralSum += 1
             else:
                 negativeSum += 1
-    insert_sql = 'INSERT INTO 3classify(emotionAnaid, favor,neutral,opposite,time) VALUES(' + str(
-        emotionAnaId) + ',' + str(
-        positiveSum) + ',' +str(neutralSum)+','+ str(negativeSum) + ',' + '"' + str(date) + '")'
-    insert_db(insert_sql)
+        insert_sql = 'INSERT INTO 3classify(emotionAnaid, favor,neutral,opposite,time) VALUES(' + str(
+            emotionAnaId) + ',' + str(
+            positiveSum) + ',' +str(neutralSum)+','+ str(negativeSum) + ',' + '"' + str(date) + '")'
+        insert_db(insert_sql)
     #     f.write(str(date) + '\n')
     #     f.write(str(negativeSum) + " " + str(neutralSum) + " " + str(positiveSum) + " " + str(Sum) + '\n')
     #     f.write("消极：" + str("%.2f" % (negativeSum * 100.0 / Sum)) + "%" + '\n')
